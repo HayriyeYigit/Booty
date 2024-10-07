@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/0c662949f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kontaktformular</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" width="40" height="30" alt="">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Über Uns</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Unsere Angebote
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Bootstrap</a>
+                <a class="dropdown-item" href="#">JavaScript</a>
+                <a class="dropdown-item" href="#">MSSQL</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>            </li>
+          </ul>
+         
+        </div>
+      </nav>
+    <div class="container">
+        <h3 class="text-center mt-4">ANMELDEFORMULAR</h3>
+      <form class="mt-5">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="nameInput">Name Nachname</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                aria-describedby="nameHelp"
+              />
+              <small id="nameHelp" class="form-text text-muted"
+                >Diesen Bereich beschriften</small
+              >
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email Adresse</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="stadt">Wähle eine Stadt</label>
+              <select class="form-control" id="stadt">
+                <option>Berlin</option>
+                <option>Bonn</option>
+                <option>Frankfurt</option>
+                <option>Stuttgart</option>
+                <option>München</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="file">Bild hinzufügen</label>
+              <input type="file" class="form-control-file" id="file" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">
+              <h5>Geschlecht</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios1"
+                  value="option1"
+                  checked
+                />
+                <label class="form-check-label" for="exampleRadios1">
+                  Männlich
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios2"
+                  value="option2"
+                  checked
+                />
+                <label class="form-check-label" for="exampleRadios2">
+                  Weiblich
+                </label>
+              </div>
+            </div>
+            <br />
+            <div class="col">
+              <h5>Hobbies</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check1"
+                />
+                <label class="form-check-label" for="check1">
+                  Auswahl 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check2"
+                />
+                <label class="form-check-label" for="check2">
+                  Auswahl 2
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check3"
+                />
+                <label class="form-check-label" for="check3">
+                  Auswahl 3
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check4"
+                />
+                <label class="form-check-label" for="check4">
+                  Auswahl 4
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <button type="submit" class="btn btn-success btn-block">Speichern</button>
+            <button type="reset" class="btn btn-secondary btn-block">Löschen</button>
+
+        </div>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 by <a href="https://www.github.com/username">HAYRIYE</a></p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
